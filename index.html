@@ -3,134 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ErgoPro | Enterprise Ergonomic Assessments</title>
+    <title>Ergo-Forensic | Professional Workplace Assessment</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
+        :root {
+            --brand-navy: #0a192f;
+            --brand-gold: #c5a059;
+            --brand-slate: #f1f5f9;
+        }
         body { font-family: 'Inter', sans-serif; }
-        .bg-ergo-dark { background-color: #0F172A; } /* Professional Navy */
-        .text-ergo-accent { color: #10B981; } /* Health/Safety Green */
-        .glass-card { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; }
+        .navy-bg { background-color: var(--brand-navy); }
+        .gold-text { color: var(--brand-gold); }
+        .gold-border { border-color: var(--brand-gold); }
+        .hero-gradient {
+            background: linear-gradient(rgba(10, 25, 47, 0.85), rgba(10, 25, 47, 0.85)), 
+                        url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1200');
+            background-size: cover;
+            background-position: center;
+        }
     </style>
 </head>
-<body class="bg-white text-slate-800 antialiased">
+<body class="bg-white text-slate-900 antialiased">
 
-    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-100">
-        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="flex items-center space-x-2">
-                <div class="w-8 h-8 bg-emerald-500 rounded-lg flex items-center justify-center text-white font-bold italic">E</div>
-                <span class="text-xl font-bold tracking-tight text-slate-900">ERGO<span class="text-emerald-600">PRO</span></span>
+    <div class="navy-bg text-white py-2 px-6 text-xs flex justify-between items-center border-b border-white/10">
+        <div class="flex space-x-6">
+            <span>Official Ergonomic Consultancy</span>
+            <span>Kuala Lumpur, Malaysia</span>
+        </div>
+        <div class="hidden md:block">ISO 9001:2015 Certified Practice</div>
+    </div>
+
+    <nav class="sticky top-0 z-50 bg-white border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+            <div class="flex items-center">
+                <div class="border-l-4 gold-border pl-3">
+                    <span class="text-2xl font-bold tracking-tighter block leading-none">ERGO</span>
+                    <span class="text-sm uppercase tracking-widest text-slate-500 font-semibold">Forensic Group</span>
+                </div>
             </div>
-            <div class="hidden md:flex space-x-8 text-sm font-medium text-slate-600 uppercase tracking-widest">
-                <a href="#services" class="hover:text-emerald-600 transition">Services</a>
-                <a href="#process" class="hover:text-emerald-600 transition">Our Process</a>
-                <a href="#results" class="hover:text-emerald-600 transition">Results</a>
+            <div class="hidden md:flex space-x-10 text-sm font-bold uppercase tracking-widest">
+                <a href="#about" class="hover:text-[#c5a059] transition">The Practice</a>
+                <a href="#services" class="hover:text-[#c5a059] transition">Assessment Areas</a>
+                <a href="#contact" class="hover:text-[#c5a059] transition">Case Referral</a>
             </div>
-            <a href="#contact" class="bg-slate-900 text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-slate-800 transition shadow-md">Book Assessment</a>
+            <a href="tel:+" class="hidden lg:block border gold-border px-5 py-2 text-xs font-bold uppercase tracking-widest hover:bg-[#c5a059] hover:text-white transition">Inquiry</a>
         </div>
     </nav>
 
-    <header class="relative py-24 px-6 overflow-hidden">
-        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-            <div>
-                <span class="inline-block px-4 py-1.5 mb-6 text-xs font-bold tracking-widest uppercase bg-emerald-50 text-emerald-700 rounded-full border border-emerald-100">Optimize Your Workplace</span>
-                <h1 class="text-5xl md:text-7xl font-bold leading-tight text-slate-900 mb-6">
-                    Better Posture. <br><span class="text-emerald-600">Greater Results.</span>
+    <header class="hero-gradient min-h-[70vh] flex items-center px-6 relative">
+        <div class="max-w-7xl mx-auto w-full">
+            <div class="md:w-2/3 lg:w-1/2">
+                <span class="gold-text uppercase tracking-[0.3em] font-bold text-sm mb-4 block">Professional Integrity • Precision • Health</span>
+                <h1 class="text-5xl md:text-7xl text-white mb-6 leading-tight">
+                    Scientific Assessment. <br><span class="italic">Measured Outcomes.</span>
                 </h1>
-                <p class="text-lg text-slate-600 mb-8 max-w-md leading-relaxed">
-                    We provide data-driven ergonomic assessments that reduce workplace injuries, increase employee comfort, and boost overall productivity.
+                <p class="text-slate-300 text-lg mb-10 leading-relaxed max-w-lg">
+                    Providing comprehensive ergonomic forensic investigations and workplace risk assessments for modern enterprise environments.
                 </p>
-                <div class="flex items-center space-x-4">
-                    <button class="bg-emerald-600 text-white px-8 py-4 rounded-xl font-bold hover:bg-emerald-700 transition shadow-lg shadow-emerald-200">Get a Free Quote</button>
-                    <button class="text-slate-900 font-semibold px-6 flex items-center group">
-                        See Case Studies <span class="ml-2 group-hover:translate-x-1 transition">→</span>
-                    </button>
-                </div>
-            </div>
-            <div class="relative">
-                <div class="w-full aspect-square rounded-3xl bg-slate-100 border border-slate-200 flex items-center justify-center relative z-10 overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1590650516494-0c8e4a4dd67e?auto=format&fit=crop&q=80&w=800" alt="Professional Office Setup" class="object-cover w-full h-full opacity-90">
-                </div>
-                <div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-xl border border-slate-50 z-20">
-                    <p class="text-3xl font-bold text-emerald-600">30%</p>
-                    <p class="text-xs text-slate-500 font-medium uppercase tracking-tighter">Injury Reduction</p>
+                <div class="flex space-x-4">
+                    <a href="#contact" class="bg-[#c5a059] text-white px-8 py-4 font-bold uppercase text-xs tracking-widest hover:brightness-110 transition">Request Assessment</a>
+                    <a href="#services" class="border border-white/30 text-white px-8 py-4 font-bold uppercase text-xs tracking-widest hover:bg-white/10 transition">View Capabilities</a>
                 </div>
             </div>
         </div>
     </header>
 
-    <section id="services" class="py-24 bg-slate-50 px-6">
-        <div class="max-w-7xl mx-auto">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold text-slate-900 mb-4">Specialized Assessments</h2>
-                <div class="h-1 w-20 bg-emerald-500 mx-auto rounded-full"></div>
+    <section id="services" class="py-24 bg-[#f8fafc]">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+                <div class="md:w-1/2">
+                    <h2 class="text-4xl font-bold mb-4">Core Competencies</h2>
+                    <div class="h-1 w-20 bg-[#c5a059] mb-6"></div>
+                    <p class="text-slate-600">Our agency employs evidence-based methodologies to identify, evaluate, and mitigate physical risk factors in the workplace.</p>
+                </div>
+                <a href="#" class="text-[#c5a059] font-bold uppercase tracking-widest text-xs border-b gold-border pb-1 hover:text-[#0a192f] transition">Download Service Prospectus</a>
             </div>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-white p-10 rounded-2xl border border-slate-200 hover:shadow-xl transition-shadow group">
-                    <div class="w-14 h-14 bg-emerald-50 rounded-xl flex items-center justify-center text-emerald-600 mb-6 group-hover:bg-emerald-600 group-hover:text-white transition-colors text-2xl">💻</div>
-                    <h3 class="text-xl font-bold mb-3">Office Ergonomics</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed mb-6">Complete workstation evaluations including monitor height, chair alignment, and lighting optimization.</p>
-                    <ul class="text-xs space-y-2 text-slate-500 font-medium">
-                        <li>• Personalized Adjustments</li>
-                        <li>• Equipment Recommendation</li>
-                    </ul>
+
+            <div class="grid md:grid-cols-3 border-t border-l border-slate-200">
+                <div class="p-12 border-r border-b border-slate-200 bg-white hover:bg-slate-50 transition">
+                    <h3 class="text-2xl font-bold mb-4">Workplace Forensics</h3>
+                    <p class="text-sm text-slate-500 leading-loose mb-6">Detailed investigation into occupational musculoskeletal disorders (OMSDs) and environmental stressors.</p>
+                    <span class="text-[#c5a059] font-bold text-xs uppercase tracking-widest">Detail →</span>
                 </div>
-                <div class="bg-white p-10 rounded-2xl border border-slate-200 hover:shadow-xl transition-shadow group">
-                    <div class="w-14 h-14 bg-emerald-50 rounded-xl flex items-center justify-center text-emerald-600 mb-6 group-hover:bg-emerald-600 group-hover:text-white transition-colors text-2xl">🏗️</div>
-                    <h3 class="text-xl font-bold mb-3">Industrial Ergo</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed mb-6">Optimizing manufacturing and warehouse floor layouts to prevent repetitive strain and heavy-lifting injuries.</p>
-                    <ul class="text-xs space-y-2 text-slate-500 font-medium">
-                        <li>• Risk Factor Analysis</li>
-                        <li>• Task Modification</li>
-                    </ul>
+                <div class="p-12 border-r border-b border-slate-200 bg-white hover:bg-slate-50 transition">
+                    <h3 class="text-2xl font-bold mb-4">Cognitive Ergo</h3>
+                    <p class="text-sm text-slate-500 leading-loose mb-6">Analysis of human-system interaction, mental workload, and decision-making safety in high-stakes environments.</p>
+                    <span class="text-[#c5a059] font-bold text-xs uppercase tracking-widest">Detail →</span>
                 </div>
-                <div class="bg-white p-10 rounded-2xl border border-slate-200 hover:shadow-xl transition-shadow group">
-                    <div class="w-14 h-14 bg-emerald-50 rounded-xl flex items-center justify-center text-emerald-600 mb-6 group-hover:bg-emerald-600 group-hover:text-white transition-colors text-2xl">📡</div>
-                    <h3 class="text-xl font-bold mb-3">Virtual Consultation</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed mb-6">Remote assessments via video conferencing for hybrid and distributed teams globally.</p>
-                    <ul class="text-xs space-y-2 text-slate-500 font-medium">
-                        <li>• Fast Turnaround</li>
-                        <li>• Digital Report Delivery</li>
-                    </ul>
+                <div class="p-12 border-r border-b border-slate-200 bg-white hover:bg-slate-50 transition">
+                    <h3 class="text-2xl font-bold mb-4">Compliance Audit</h3>
+                    <p class="text-sm text-slate-500 leading-loose mb-6">Evaluating organizational adherence to local health and safety regulations and international ergonomic standards.</p>
+                    <span class="text-[#c5a059] font-bold text-xs uppercase tracking-widest">Detail →</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="process" class="py-24 px-6 bg-ergo-dark text-white">
-        <div class="max-w-7xl mx-auto">
-            <h2 class="text-3xl font-bold text-center mb-16">The Assessment Lifecycle</h2>
-            <div class="grid md:grid-cols-4 gap-4">
-                <div class="glass-card p-8 rounded-2xl">
-                    <span class="text-emerald-500 font-mono mb-4 block italic">01.</span>
-                    <h4 class="font-bold mb-2">Discovery</h4>
-                    <p class="text-slate-400 text-xs leading-loose">We analyze your current workspace culture and injury history data.</p>
+    <footer id="contact" class="navy-bg text-white py-20 px-6">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-12">
+            <div class="md:col-span-2">
+                <div class="border-l-4 gold-border pl-3 mb-6">
+                    <span class="text-2xl font-bold tracking-tighter block leading-none">ERGO</span>
+                    <span class="text-xs uppercase tracking-widest text-slate-400">Forensic Group</span>
                 </div>
-                <div class="glass-card p-8 rounded-2xl">
-                    <span class="text-emerald-500 font-mono mb-4 block italic">02.</span>
-                    <h4 class="font-bold mb-2">Observation</h4>
-                    <p class="text-slate-400 text-xs leading-loose">Our experts conduct onsite or virtual reviews of posture and movement.</p>
-                </div>
-                <div class="glass-card p-8 rounded-2xl">
-                    <span class="text-emerald-500 font-mono mb-4 block italic">03.</span>
-                    <h4 class="font-bold mb-2">The Report</h4>
-                    <p class="text-slate-400 text-xs leading-loose">A comprehensive breakdown of risks with immediate actionable fixes.</p>
-                </div>
-                <div class="glass-card p-8 rounded-2xl">
-                    <span class="text-emerald-500 font-mono mb-4 block italic">04.</span>
-                    <h4 class="font-bold mb-2">Follow-up</h4>
-                    <p class="text-slate-400 text-xs leading-loose">Secondary checks to ensure adjustments are effectively adopted by staff.</p>
-                </div>
+                <p class="text-slate-400 text-sm max-w-sm leading-loose">
+                    Headquartered in Malaysia, we serve as the primary ergonomic consultancy for leading manufacturing and corporate entities across Southeast Asia.
+                </p>
+            </div>
+            <div>
+                <h4 class="font-bold uppercase tracking-widest text-xs gold-text mb-6">Contact</h4>
+                <p class="text-sm text-slate-300">contact@yourdomain.com</p>
+                <p class="text-sm text-slate-300 mt-2">+60 3-XXXX XXXX</p>
+            </div>
+            <div>
+                <h4 class="font-bold uppercase tracking-widest text-xs gold-text mb-6">Legals</h4>
+                <ul class="text-sm text-slate-300 space-y-2">
+                    <li><a href="#" class="hover:text-white transition">Privacy Policy</a></li>
+                    <li><a href="#" class="hover:text-white transition">Ethical Framework</a></li>
+                </ul>
             </div>
         </div>
-    </section>
-
-    <footer id="contact" class="py-20 px-6 border-t border-slate-100">
-        <div class="max-w-7xl mx-auto text-center">
-            <h2 class="text-3xl font-bold mb-4">Ready for a Healthier Workspace?</h2>
-            <p class="text-slate-500 mb-10 max-w-lg mx-auto">Join hundreds of companies that trust ErgoPro for their safety compliance and employee wellness.</p>
-            <a href="mailto:contact@yourdomain.com" class="text-2xl font-bold text-emerald-600 underline hover:text-emerald-700 transition">contact@yourdomain.com</a>
-            <p class="mt-20 text-slate-400 text-xs uppercase tracking-widest">© 2026 ErgoPro Assessments. Professional Safety Verified.</p>
+        <div class="max-w-7xl mx-auto mt-20 pt-8 border-t border-white/5 text-[10px] text-slate-500 uppercase tracking-[0.2em] flex justify-between">
+            <span>© 2026 ERGO FORENSIC GROUP</span>
+            <span>All Data Protected under PDPA 2010</span>
         </div>
     </footer>
 
